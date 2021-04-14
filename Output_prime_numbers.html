@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        let num = +prompt("Enter a positive number to get primes upto.");
+        let cnt;
+        for (let number = 2; number <= num; number++) {
+            cnt = 0;
+            for (let divisor = 1; divisor <= number / 2; divisor++) {
+                if (number % divisor == 0) {
+                    cnt++;
+                }
+            }
+            if (cnt == 1) alert(number);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
