@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function print(obj) {
+            let str = '{\n';
+            for (let key in obj) str += (`  ${key} : ${obj[key]} \n`)
+            return str + '}';
+        }
+
+        function multiplyNumeric(obj) {
+            for (let key in obj) {
+                if (Number(obj[key])) obj[key] *= 2;
+            }
+            return obj;
+        }
+        let menu = {
+            width: 200,
+            height: 300,
+            title: "My menu"
+        };
+        alert(print(menu));
+        multiplyNumeric(menu);
+        alert(print(menu));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
