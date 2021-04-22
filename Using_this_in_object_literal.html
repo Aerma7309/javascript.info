@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        "use strict"
+
+        function makeUser() {
+            return {
+                name: "John",
+                ref: this
+            };
+        }
+        let user = makeUser();
+        alert(user.ref.name); //TypeError: Cannot read property 'name' of undefined
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
