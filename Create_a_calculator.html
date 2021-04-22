@@ -4,20 +4,19 @@
 <head>
     <script>
         let calculator = {
-            read: function() {
+            read() {
                 this.a = +prompt("enter first nunber");
                 this.b = +prompt("enter second nunber");
             },
-            sum: function() {
+            sum() {
                 return this.a + this.b
             },
-            mul: function() {
+            mul() {
                 return this.a * this.b
             }
         };
         calculator.read();
-        // alert(calculator.a);
-        // alert(calculator.b);
+
         alert(calculator.sum());
         alert(calculator.mul())
     </script>
