@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function Calculator() {
+            this.read = () => {
+                this.a = +prompt("enter first nunber");
+                this.b = +prompt("enter second nunber");
+            };
+            this.sum = () => this.a + this.b;
+            this.mul = () => this.a * this.b;
+        }
+
+        let calculator = new Calculator();
+        calculator.read();
+
+        alert("Sum=" + calculator.sum());
+        alert("Mul=" + calculator.mul());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
