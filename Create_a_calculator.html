@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        let calculator = {
+            read: function() {
+                this.a = +prompt("enter first nunber");
+                this.b = +prompt("enter second nunber");
+            },
+            sum: function() {
+                return this.a + this.b
+            },
+            mul: function() {
+                return this.a * this.b
+            }
+        };
+        calculator.read();
+        // alert(calculator.a);
+        // alert(calculator.b);
+        alert(calculator.sum());
+        alert(calculator.mul())
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
