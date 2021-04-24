@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function readNumber() {
+            let num;
+            do {
+                let inp = prompt("enter a number");
+                if (inp === '' || inp == null) return null;
+                num = +inp;
+            } while (num == NaN);
+            return num;
+        }
+        alert(readNumber());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
