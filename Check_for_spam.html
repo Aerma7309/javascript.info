@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        str1 = 'viagra';
+        str2 = 'XXX';
+        checkSpam = (text) => {
+            res1 = text.toLowerCase().includes(str1.toLowerCase());
+            res2 = text.toLowerCase().includes(str2.toLowerCase());
+            return res1 || res2;
+        };
+        alert(checkSpam('buy ViAgRA now') == true);
+        alert(checkSpam('free xxxxx') == true);
+        alert(checkSpam("innocent rabbit") == false);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
