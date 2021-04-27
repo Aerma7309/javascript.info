@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        truncate = (text, ms) => {
+            if (text.length <= ms) return text;
+            return text.slice(0, ms - 1) + '...';
+        };
+        alert(truncate("What I'd like to tell on this topic is:", 20) == "What I'd like to te...");
+        alert(truncate("Hi everyone!", 20) == "Hi everyone!");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
